@@ -7,11 +7,28 @@
 
 /* Global Styles */
 
-body {
-	font-family: 'Open Sans', sans-serif;
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+	box-sizing: border-box;
 }
 
-h1, h2 {
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+* {
+	border: 1px solid green;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+}
+
+h1,
+h2 {
 	font-family: 'Caveat', cursive;
 }
 
@@ -21,6 +38,7 @@ h1 {
 
 h2 {
 	font-size: 40px;
+	margin-top: 0;
 }
 
 a {
@@ -31,6 +49,23 @@ a:hover {
 	text-decoration: none;
 }
 
+.content-wrap {
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: auto;
+}
+
+.col-narrow {
+	width: 30%;
+	float: left;
+}
+
+.col-wide {
+	width: 70%;
+	float:left;
+}
+
 /* Header and Footer */
 
 header,
@@ -39,9 +74,37 @@ footer {
 	color: #8D99AE;
 }
 
+/* header */
+
+.profile-img {
+	border-radius: 50%;
+/* // no needed after box-model fix
+	width: 300px;
+	float: left;
+	margin-right: 30px;
+*/
+}
+
+header {
+	/*	text-align: center;*/
+}
+
 header h1,
 header h2 {
 	color: #8D99AE;
+	margin: 0;
+}
+
+/* footer */
+footer {
+	text-align: center;
+}
+
+.contact-info a {
+	/*	background: white;*/
+	margin: 10px;
+	padding: 10px;
+	display: inline-block;
 }
 
 /* Work Experience Section*/
