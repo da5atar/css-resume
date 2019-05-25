@@ -41,6 +41,10 @@ h2 {
 	margin-top: 0;
 }
 
+h3 {
+	margin: 0;
+}
+
 a {
 	color: #EF233C;
 }
@@ -63,7 +67,11 @@ a:hover {
 
 .col-wide {
 	width: 70%;
-	float:left;
+	float: left;
+}
+
+.uppercase {
+	text-transform: uppercase;
 }
 
 /* Header and Footer */
@@ -78,7 +86,9 @@ footer {
 
 .profile-img {
 	border-radius: 50%;
-/* // no needed after box-model fix
+	height: 300px;
+	width: 250px;
+	/* not needed after box-model fix
 	width: 300px;
 	float: left;
 	margin-right: 30px;
@@ -113,8 +123,24 @@ footer {
 	background: #EDF2F4;
 }
 
+h3~p {
+	margin: 0;
+}
+
+.job-description {
+	margin-bottom: 25px;
+}
+
+.job-description p:first-of-type {
+	margin-top: 0;
+}
+
 /* Education Section */
 
 .education {
 	background: #8D99AE;
+}
+
+p + h3 {
+	margin-top: 30px;
 }
