@@ -5,7 +5,8 @@
 #EF233C - red
 */
 
-/* Global Styles */
+/* Global Styles
+---------------------------------*/
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -117,7 +118,22 @@ footer {
 	display: inline-block;
 }
 
-/* Work Experience Section*/
+/* Navigation
+---------------------------------*/
+nav {
+	text-align: center;
+}
+
+nav a {
+	display: inline-block;
+	padding: 15px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+/* Work Experience Section
+---------------------------------*/
 
 .work {
 	background: #EDF2F4;
