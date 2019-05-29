@@ -57,7 +57,7 @@ a:hover {
 .content-wrap {
 	max-width: 950px;
 	margin: 0 auto;
-	padding: 50px;
+	padding: 60px 50px;
 	overflow: auto;
 }
 
@@ -75,7 +75,16 @@ a:hover {
 	text-transform: uppercase;
 }
 
-/* Header and Footer */
+.btn {
+	text-decoration: none;
+	background: #EF233C;
+	color: white;
+	padding: 10px;
+	display: inline-block;
+}
+
+/* Header and Footer
+---------------------------------*/
 
 header,
 footer {
@@ -96,8 +105,16 @@ footer {
 */
 }
 
+.download {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
 header {
-	/*	text-align: center;*/
+/*	text-align: center;*/
+/*	padding-top: 50px;*/
+	position: relative;
 }
 
 header h1,
@@ -122,6 +139,10 @@ footer {
 ---------------------------------*/
 nav {
 	text-align: center;
+	background: white;
+	position fixed;
+	top: 0;
+	width: 100%;
 }
 
 nav a {
