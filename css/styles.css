@@ -112,8 +112,8 @@ footer {
 }
 
 header {
-/*	text-align: center;*/
-/*	padding-top: 50px;*/
+	/*	text-align: center;*/
+	/*	padding-top: 50px;*/
 	position: relative;
 }
 
@@ -157,10 +157,15 @@ nav a {
 ---------------------------------*/
 
 .work {
-	background: #EDF2F4;
+	/*	background: #EDF2F4;*/
+	/* sets gradient and image */
+	background: linear-gradient(rgba(237, 242, 244, 0.8),
+			    rgba(237, 242, 244, 0.5)),
+		        url(https://unsplash.it/2000/1200) no-repeat fixed;
+	background-size: cover;
 }
 
-h3~p {
+h3 ~ p {
 	margin: 0;
 }
 
@@ -175,7 +180,12 @@ h3~p {
 /* Education Section */
 
 .education {
-	background: #8D99AE;
+	/*	background: #8D99AE;*/
+	/* sets gradient and image */
+	background: linear-gradient(rgba(141, 153, 174, 0.8),
+			    rgba(141, 153, 174, 0.5)),
+		        url(https://unsplash.it/2000/400) no-repeat fixed;
+	background-size: cover;
 }
 
 p + h3 {
