@@ -20,7 +20,7 @@ html {
 }
 
 * {
-	border: 1px solid green;
+/*	border: 1px solid green;*/
 }
 
 body {
@@ -109,7 +109,7 @@ header {
 
 header h1,
 header h2 {
-	color: #8D99AE;
+	color: #EDF2F4;
 	margin: 0;
 }
 
@@ -147,7 +147,7 @@ nav a {
 ---------------------------------*/
 
 .work {
-	/*	background: #EDF2F4;*/
+/*	background: #EDF2F4;*/
 	/* sets gradient and image */
 	background: linear-gradient(rgba(237, 242, 244, 0.8),
 			rgba(237, 242, 244, 0.5)),
@@ -188,12 +188,12 @@ p + h3 {
 
 @media (min-width: 900px) {
 	.col-narrow {
-		width: 30%;
+		width: 35%;
 		float: left;
 	}
 
 	.col-wide {
-		width: 70%;
+		width: 65%;
 		float: left;
 		padding-left: 20px;
 	}
