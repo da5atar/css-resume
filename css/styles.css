@@ -61,16 +61,6 @@ a:hover {
 	overflow: auto;
 }
 
-.col-narrow {
-	width: 30%;
-	float: left;
-}
-
-.col-wide {
-	width: 70%;
-	float: left;
-}
-
 .uppercase {
 	text-transform: uppercase;
 }
@@ -97,7 +87,7 @@ footer {
 .profile-img {
 	border-radius: 50%;
 	height: 300px;
-	width: 250px;
+	width: 300px;
 	/* not needed after box-model fix
 	width: 300px;
 	float: left;
@@ -160,8 +150,8 @@ nav a {
 	/*	background: #EDF2F4;*/
 	/* sets gradient and image */
 	background: linear-gradient(rgba(237, 242, 244, 0.8),
-			    rgba(237, 242, 244, 0.5)),
-		        url(https://unsplash.it/2000/1200) no-repeat fixed;
+			rgba(237, 242, 244, 0.5)),
+		url(https://unsplash.it/2000/1200) no-repeat fixed;
 	background-size: cover;
 }
 
@@ -177,17 +167,45 @@ h3 ~ p {
 	margin-top: 0;
 }
 
-/* Education Section */
+/* Education Section
+---------------------------------*/
 
 .education {
 	/*	background: #8D99AE;*/
 	/* sets gradient and image */
 	background: linear-gradient(rgba(141, 153, 174, 0.8),
-			    rgba(141, 153, 174, 0.5)),
-		        url(https://unsplash.it/2000/400) no-repeat fixed;
+			rgba(141, 153, 174, 0.5)),
+		url(https://unsplash.it/2000/400) no-repeat fixed;
 	background-size: cover;
 }
 
 p + h3 {
 	margin-top: 30px;
+}
+
+/* Media Queries
+---------------------------------*/
+
+@media (min-width: 900px) {
+	.col-narrow {
+		width: 30%;
+		float: left;
+	}
+
+	.col-wide {
+		width: 70%;
+		float: left;
+		padding-left: 20px;
+	}
+}
+
+@media (max-width: 899px) {
+	header {
+		text-align: center;
+	}
+
+	.profile-img {
+		width: 200px;
+		height: 200px;
+	}
 }
